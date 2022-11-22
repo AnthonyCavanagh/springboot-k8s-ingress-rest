@@ -1,0 +1,3 @@
+spring:
+  application:
+    name: springboot-k8s-ingress-rest
