@@ -27,7 +27,7 @@ spec:
     spec:
       containers:
         - name: rest-service
-          image: tonycav/myrepo:k8-rest-v1
+          image: tonycav/k8:springboot-k8s-ingress-rest
           ports:
           - containerPort: 8080
           
