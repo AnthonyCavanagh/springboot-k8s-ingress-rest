@@ -21,7 +21,7 @@ pipeline {
             steps{
                 script{
                    withCredentials([string(credentialsId: 'dockerhub-pwd', variable: 'dockerhubpwd')])  {
-                     bat 'docker login -u tonycav -p GBuksa80@'
+                     bat 'docker login -u tonycav -p ${dockerhubpwd}'
                      bat 'docker push tonycav/k8:springboot-k8s-ingress-rest'
                    }
                 }
